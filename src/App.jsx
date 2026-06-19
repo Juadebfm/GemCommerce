@@ -10,9 +10,9 @@ import realFoodIcon from './assets/real_food.png'
 import shieldIcon from './assets/Action/shield-check.png'
 import vetIcon from './assets/vet.png'
 import visaLogo from './assets/visa.png'
-import dogEatImage from './assets/dog_eat.png'
-import dogEatFoodImage from './assets/dog_eat_food.png'
-import dogLickImage from './assets/dog_lick.png'
+import dogEatImage from './assets/dog_eat.jpg'
+import dogEatFoodImage from './assets/dog_eat_food.jpg'
+import dogLickImage from './assets/dog_lick.jpg'
 
 const featureGroups = {
   left: [
@@ -126,7 +126,15 @@ function App() {
           </div>
 
           <div className="hero-media" aria-label="Product comparison bowl graphic">
-            <img className="bowl-image" src={foodImage} alt="Bowl of dog food" />
+            <img
+              className="bowl-image"
+              src={foodImage}
+              alt="Bowl of dog food"
+              width="370"
+              height="370"
+              decoding="async"
+              fetchPriority="high"
+            />
           </div>
 
           <div className="feature-column">
@@ -196,6 +204,10 @@ function App() {
                 className="nutrition-image"
                 src={dogLickImage}
                 alt="Dog beside a bag of Happy Dog Bites"
+                width="570"
+                height="570"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -210,7 +222,15 @@ function App() {
               key={row.id}
             >
               <div className="benefit-image-frame">
-                <img className="benefit-image" src={row.image} alt={row.imageAlt} />
+                <img
+                  className="benefit-image"
+                  src={row.image}
+                  alt={row.imageAlt}
+                  width="570"
+                  height="480"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
 
               <div className="benefit-copy">
