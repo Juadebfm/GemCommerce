@@ -145,9 +145,9 @@ function App() {
         </div>
 
         <div className="difference-cta">
-          <a className="cta-button" href="#shop">
+          <button className="cta-button" href="#shop">
             Get your dog&apos;s healthy meal today!
-          </a>
+          </button>
 
           <div className="trust-row">
             <div className="guarantee">
