@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family:
+    'Inter Tight', Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0f172a;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --text: #171b2b;
+  --muted-text: #646a7d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+body,
+a,
+button {
+  color: var(--text);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.25px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: #161723;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 1.15rem;
+  line-height: 1.3;
+}
+
+p,
+li {
+  color: var(--muted-text);
+}
